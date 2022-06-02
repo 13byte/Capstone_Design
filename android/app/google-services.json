@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "894458002793",
+    "project_id": "howon-reserve-app",
+    "storage_bucket": "howon-reserve-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:894458002793:android:599f9e504725c9aa2c91f8",
+        "android_client_info": {
+          "package_name": "com.example.howon_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "894458002793-940cvc918k768v392q07qiatu3drirll.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC48kGLJu5iYt5TivQAFHvKaIyPFXoiXms"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "894458002793-940cvc918k768v392q07qiatu3drirll.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "894458002793-ucia7am1ctsl2jshrrap64lo41o0e9ou.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.howonProject"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
