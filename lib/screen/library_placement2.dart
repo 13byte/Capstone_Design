@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:howon_project/const/colors.dart';
 import 'package:howon_project/layout/main_layout.dart';
 import 'package:howon_project/main.dart';
-import 'package:howon_project/screen/library_placement4.dart';
+import 'package:howon_project/screen/library_placement3.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
@@ -30,7 +30,7 @@ class _LibraryPlacement2State extends State<LibraryPlacement2> {
                     //파이어베이스의 db안의 컬렉션 주소
                     //micro.com - wire structure
                     FirebaseFirestore.instance
-                        .collection('library/library1/reading_rooms')
+                        .collection('facilities/library/1reading_room')
                         .snapshots(),
                 builder: (BuildContext context,
                     AsyncSnapshot<QuerySnapshot<Map<String, dynamic>>>
@@ -148,7 +148,7 @@ class _LibraryPlacement2State extends State<LibraryPlacement2> {
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (BuildContext context) {
-          return LibraryPlacement4();
+          return LibraryPlacement3();
         },
       ),
     );

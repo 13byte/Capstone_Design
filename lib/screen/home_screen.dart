@@ -3,7 +3,6 @@ import 'package:howon_project/const/colors.dart';
 import 'package:howon_project/layout/main_layout.dart';
 import 'package:howon_project/screen/library_placement1.dart';
 import 'package:howon_project/screen/reservation_screen.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -13,27 +12,6 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  final _authentication = FirebaseAuth.instance;
-  User? loggedUser;
-
-  @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-    getCurrentUser();
-  }
-
-  void getCurrentUser() {
-    try {
-      final user = _authentication.currentUser;
-      if (user != null) {
-        loggedUser = user;
-        print(loggedUser!.email);
-      }
-    } catch (e) {
-      print(e);vv
-    }
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -45,23 +23,25 @@ class _HomeScreenState extends State<HomeScreen> {
             Row(
               children: [
                 Container(
-                  width: MediaQuery.of(context).size.width,
-                  color: Colors.blue,
+                  width: MediaQuery
+                      .of(context)
+                      .size
+                      .width,
                   child: Padding(
                     padding: const EdgeInsets.symmetric(
                         vertical: 24, horizontal: 24),
                     child: RichText(
                         text: TextSpan(
-                      text: '정택현',
-                      style: TextStyle(
-                          fontSize: 16.0, fontWeight: FontWeight.bold),
-                      children: [
-                        TextSpan(
-                          text: ' 님 반갑습니다.',
-                          style: TextStyle(fontWeight: FontWeight.normal),
-                        )
-                      ],
-                    )),
+                          text: '정택현',
+                          style: TextStyle(
+                              color: Colors.black, fontSize: 16.0, fontWeight: FontWeight.bold),
+                          children: [
+                            TextSpan(
+                              text: ' 님 반갑습니다.',
+                              style: TextStyle(fontWeight: FontWeight.normal),
+                            )
+                          ],
+                        )),
                     //Text('김명준 님 반갑습니다.', style: TextStyle(color: Colors.white, fontSize: 16.0)),
                   ),
                 ),

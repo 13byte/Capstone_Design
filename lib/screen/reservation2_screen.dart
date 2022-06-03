@@ -132,7 +132,11 @@ class _Reservation2ScreenState extends State<Reservation2Screen> {
           //contentPadding: EdgeInsets.zero,
           title: new Text("※ 배정정보"),
           content: new Text(
-              "좌석 번호 : 12\n배정 날짜 : 2022 . 04 . 20\n시작 시간 : 16 : 00\n종료 시간 : 18 : 00\n총 시간     : 02시간 00분"),
+              "좌석 번호 : 12\n"
+                  "배정 날짜 : 2022 . 04 . 20\n"
+                  "시작 시간 : 16 : 00\n"
+                  "종료 시간 : 18 : 00\n"
+                  "총 시간     : 02시간 00분"),
           actions: <Widget>[
             // usually buttons at the bottom of the dialog
             new FlatButton(

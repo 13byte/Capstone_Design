@@ -16,7 +16,7 @@ class MainLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('호원대학교 시설 예약 프로그램'),
+        title: Text('호원대학교 시설 예약'),
         centerTitle: true,
         elevation: 0.0,
         //leading: IconButton(onPressed: () {}, icon: Icon(Icons.menu)),
